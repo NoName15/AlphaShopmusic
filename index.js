@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "!";
+const prefix = "q";
 /////////////////////////
 ////////////////////////
 
@@ -29,11 +29,8 @@ client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
     client.user.setGame(`!help [Bad Omarr | RO7]`,`www.twitch.tv/v5bz`);
   });
-client.on('ready', () => {
-var x = client.channels.get("501525740249153547");
-if (x) x.join();
-});
-const devs = ['450843030963093524','480407581085532180'];
+
+const devs = ['510831122238668833','480407581085532180'];
 
 client.on('message', message => {
     let argresult = message.content.split(` `).slice(1).join(' ');
@@ -372,30 +369,29 @@ client.on('message', message => {
 ╰╯╱╰┻━┫╭━┻╯╰┻╯╰┻╯╰╯╰┻━━┻━━┻┻━━╯
 ╱╱╱╱╱╱┃┃
 ╱╱╱╱╱╱╰╯
-By: RO7#9078
+By: JakeY#2019
 ╔[❖════════════❖]╗
-             Prefix = ' ! '
+             Prefix = ' q '
 ╚[❖════════════❖]╝
 ╔[❖════════════❖]╗
              Music Commands كومندات الميوزك
 ╚[❖════════════❖]╝
- ❖ !play ➾ play a song  تشغل اغنية برابط او اسم
- ❖ !stop ➾ stop the song  توقف البوت نهائيا
+ ❖ qplay ➾ play a song  تشغل اغنية برابط او اسم
+ ❖ qstop ➾ stop the song  توقف البوت نهائيا
  
- ❖ !np ➾ view the current song  تشوف الاغنية اللي مشغلة حاليا
- ❖ !queue ➾ the current playlist  تشوف قائمة التشغيل الحالية
- ❖ !skip ➾ skips a song تتجاوز اغنية
+ ❖ qnp ➾ view the current song  تشوف الاغنية اللي مشغلة حاليا
+ ❖ qqueue ➾ the current playlist  تشوف قائمة التشغيل الحالية
+ ❖ qskip ➾ skips a song تتجاوز اغنية
  
- ❖ !resume ➾ resums a song  تشغل الاغنية بعد التوقيف المؤقت
- ❖ !pause ➾ pauses a song  تووقف اغنية مؤقتا
- ❖ !join ➾ joins your voice channel  تخلي البوت يدخل رومك الصوتي
- ❖ !disconnect ➾ disconnects from your voice channel  تخلي البوت يخرج من رومك الصوتي
+ ❖ qresume ➾ resums a song  تشغل الاغنية بعد التوقيف المؤقت
+ ❖ qpause ➾ pauses a song  تووقف اغنية مؤقتا
+تخلي البوت يخرج من رومك الصوتي
 ╔[❖════════════❖]╗
              General Commands كومندات عامة
 ╚[❖════════════❖]╝
- ❖ !ping ➾ view my ping !  تشوف سرعة اتصال البوت
+ ❖ qping ➾ view my ping !  تشوف سرعة اتصال البوت
 ==================================================================
-Server support: https://discord.gg/cUgYbEr   سيرفر السيبورت
+سيرفر السيبورت
 ==================================================================
 `);
 
